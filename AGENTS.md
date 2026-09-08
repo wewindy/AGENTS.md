@@ -35,12 +35,12 @@
 
 # 创建 NodeJS 包的约定
 
-参考 `./references/create-node-package-rules.md`
+参考 [./references/create-node-package-rules.md](`./references/create-node-package-rules.md`)
 
 # TypeScript 代码习惯
 
-参考 `./references/dev-typescript-rules.md`
+参考 [./references/dev-typescript-rules.md](`./references/dev-typescript-rules.md`)
 
 # Vue.js 代码习惯
 
-查阅 `./references/dev-vuejs-rules.md`
+查阅 [./references/dev-vuejs-rules.md](`./references/dev-vuejs-rules.md`)

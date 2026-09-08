@@ -1,0 +1,22 @@
+除非我明确提出诉求，否则遵守下述约定：
+
+- 若为后台或普通命令程序开发，优先使用 `node@LTS` 作为后端
+- 优先使用 `pnpm@latest` 管理依赖
+- 优先使用 `type: module` 类型的 package.json
+- 优先创建 monorepo 工程
+- 优先使用 `typescript@6+` 作为开发依赖
+  - 一个仓库内不同运行环境的代码，需要配置不同的 `tsconfig.json`
+- 工程执行构建、测试、发布等流程控制逻辑时，优先使用 `tsx` 执行仓库 `./scripts/` 下的 typescript 脚本，若无则按需创建
+- 若为前端 SPA、MPA 工程
+  - 优先使用 `vite@latest` 创建 `vue@3.5+`、`typescript@6+` 的工程
+  - 若有前端组件的需求，优先使用 `naive-ui`
+  - 若有使用图标的需求，优先使用能配套 `naive-ui` 的 svg 图标库
+- 若为后端服务工程
+  - 优先使用 `hono` 框架，其次使用 `fastify`
+  - 接口风格优先使用 `RESTful`
+  - 要给出基本的多阶段构建 Dockerfile
+- 优先使用 `vitest` 作为单元测试框架
+  - 新增、修改、移除功能时，使用适当的单元测试密度增减测试用例
+- 优先使用 `oxlint`、`oxfmt`、`oxlint-tsgolint` 控制新仓库的代码风格和质量
+  - 格式上，使用 2 空格缩进，使用单引号，不使用分号结尾，文件末尾追加空行，使用尾随逗号
+  - 语法上，优先使用 ESNext
